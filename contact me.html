@@ -1,0 +1,122 @@
+<html>
+	<!--
+	Name:Andy Weigel
+	Date Created: 8/17/2020
+	Most recent revision: None
+	-->
+	<head>
+		<title>Contact Me</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<link href="styles/form.css" rel="stylesheet" type="text/css" />
+		    <style>
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        th {
+            background-color: #546a7b; 
+            color: #f2eded;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #e4c3ad; 
+        }
+        
+        /* Creating article layouts */
+        .clear-float {
+            clear:both;
+        }
+
+        article img {
+            float:left;
+        }
+
+        .right-content {
+            float:left;
+        }
+
+        article {
+            margin-bottom: 16px;
+        }
+    </style>
+	</head>	
+	<body>
+		<header>
+			<h1>Contact Me</h1>
+		</header>
+		
+		<nav class="border">
+			<p><a href="index.html">Home</a></p>
+            <p><a href="projects.html">Projects</a></p>
+            <p><a href="testimonials.html">Testimonials</a></p>
+		<div class="clear-float"></div>
+		</nav>
+		
+		<section>
+		<h2>Information Request</h2>
+			<form action="submit.html" method="POST">
+				<!-- First Name label and textbox -->
+				<label for="firstname">First Name:</label><br />
+				<input type="text" id="firstName" name="firstName"><br />
+				<!-- Last Name label and textbox -->
+				<label for="lastName">Last Name:</label><br />
+				<input type="text" id="lastName" name="lastName"><br />
+				<!-- Phone Number label and textbox -->
+				<label for="phone">Phone Number:</label><br />
+				<input type="text" id="phone" name="phone"><br />
+				<!-- Dropdown menu -->
+				<label for="contact">Best time to call></label><br />
+				<select id="contact" name="contact">
+					<option value="defaut" selected>--Select One--</option>
+				<option value="morning">Morning (8AM to 12PM Central</option>
+				<option value="afternoon">Afternoon (12PM to 5PM Central</option>
+				<option value="evening">Evening (5PM to 8PM Central)</option>
+			</select>
+			<!-- Check list -->
+			<fieldset>
+			<legend>I am interested in (check all that apply):</legend><br />
+			<input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+			<label for="frontEnd">Front-End Web Development</label> <br />
+			<input type="checkbox" id="BackEnd" name="interest" value="backend">
+			<label for="backend" >Back-End Web Development</label><br />
+			<input type="checkbox" id="database" name="interest" value="database">
+			<label for="database">Database Design</label><br />
+			</fieldset>
+			<!-- Radio Buttons -->
+			<fieldset>
+			<legend>I have filled in the client questionnaire form:</legend><br />
+			<input type="radio" id="choice1" name="questionnaire" value="yes">
+			<label for="choice1">Yes</label><br />
+			<input type="radio" id="choice2" name="questionnaire" value="no">
+			<label for="choice2">No</label><br />
+			</fieldset>
+			<!-- Textarea -->
+			<label for="info">Additional Information</label><br />
+			<textarea id="info"></textarea><br />
+			<!-- Submit button -->
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</section>
+	
+	<footer>
+		<p>&copy; 2020 Andy Weigel. All rights reserved.</p>
+	</footer>
+	</body>
+</html>
